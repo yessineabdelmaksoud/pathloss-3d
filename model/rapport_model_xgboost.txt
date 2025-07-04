@@ -1,0 +1,31 @@
+
+RAPPORT DE MODÉLISATION - PROPAGATION RADIO INDOOR
+==================================================
+
+Date: 2025-06-30 15:45:05
+Modèle: XGBoost Regressor
+Dataset: radio_dataset_notebook.csv (10000 échantillons)
+
+PERFORMANCES:
+- RMSE Test: 5.351 dB
+- MAE Test: 4.244 dB  
+- R² Test: 0.965
+- Validation Croisée: 5.318 ± 0.030 dB
+
+HYPERPARAMÈTRES OPTIMAUX:
+- colsample_bytree: 0.9
+- learning_rate: 0.2
+- max_depth: 5
+- n_estimators: 300
+- subsample: 0.8
+
+IMPORTANCE DES VARIABLES:
+- etage: 0.612
+- distance: 0.184
+- numwall: 0.146
+- frequence: 0.058
+
+CONCLUSION:
+Le modèle XGBoost optimisé atteint une précision de ±4.2 dB
+en moyenne sur l'ensemble de test, avec un R² de 0.965.
+Amélioration de 1.6% par rapport au modèle de base.
